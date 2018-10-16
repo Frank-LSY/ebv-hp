@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep 26 11:27:21 2018
+
+@author: frank-lsy
+"""
+
+
+f = open("../EBV-union/1.csv",'r')
+
+peptides = f.readlines()
+
+print(peptides)
+real_peptides = []
+for peptide in peptides:
+    real_peptide = peptide[:9]+'\n'
+    real_peptides.append(real_peptide)
+
+print(real_peptides)
